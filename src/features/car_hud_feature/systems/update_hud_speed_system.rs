@@ -8,9 +8,9 @@ pub fn update_hud_speed_system(
     mut text_query: Query<&mut Text, With<CarHudSpeedText>>,
 ) {
     for car_speed in &car_speed_query {
-        let speed = car_speed.speed;
+        let speed = car_speed.speed * 100.0;
         for mut text in &mut text_query {
-            text.sections[0].value = format!("{speed:.1}");
+            text.sections[0].value = format!("{speed:.0}");
         }
     }
 }

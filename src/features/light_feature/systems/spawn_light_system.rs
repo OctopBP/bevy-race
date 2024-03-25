@@ -8,6 +8,7 @@ pub fn spawn_light_system(
         directional_light: DirectionalLight {
             shadows_enabled: true,
             illuminance: 5000.0,
+            color: Color::Rgba { red: 1.0, green: 0.95, blue: 0.9, alpha: 1.0 },
             ..default()
         },
         transform: Transform {
