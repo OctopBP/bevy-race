@@ -1,6 +1,6 @@
 use bevy::prelude::*;
-use crate::features::car_system::components::car_component::Car;
-use crate::features::car_system::components::car_speed_component::CarSpeed;
+use crate::features::car_system_feature::components::car_component::Car;
+use crate::features::car_system_feature::components::car_speed_component::CarSpeed;
 
 pub fn car_move_system(
     time: Res<Time>,

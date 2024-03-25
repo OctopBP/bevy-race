@@ -4,6 +4,7 @@ use crate::features::camera_feature::components::camera_component::Camera;
 pub fn spawn_camera_system(
     mut commands: Commands,
 ) {
+    commands.spawn(Camera2dBundle::default());
     commands.spawn((
         Camera,
         Camera3dBundle {

@@ -1,5 +1,5 @@
 use bevy::prelude::*;
-use crate::features::car_system::components::car_speed_component::CarSpeed;
+use crate::features::car_system_feature::components::car_speed_component::CarSpeed;
 
 const MAX_SPEED: f32 = 30.0;
 const ACCELERATION: f32 = 5.0;

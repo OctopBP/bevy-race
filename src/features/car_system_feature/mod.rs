@@ -4,7 +4,7 @@ pub mod components;
 use bevy::prelude::*;
 use systems::spawn_car_system::spawn_car_system;
 use systems::car_move_system::car_move_system;
-use crate::features::car_system::systems::car_acceleration_system::car_acceleration_system;
+use systems::car_acceleration_system::car_acceleration_system;
 
 pub struct CarFeature;
 

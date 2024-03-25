@@ -1,7 +1,7 @@
 use bevy::prelude::*;
 use crate::features::camera_feature::components::camera_target_component::CameraTarget;
-use crate::features::car_system::components::car_component::Car;
-use crate::features::car_system::components::car_speed_component::CarSpeed;
+use crate::features::car_system_feature::components::car_component::Car;
+use crate::features::car_system_feature::components::car_speed_component::CarSpeed;
 
 pub fn spawn_car_system(
     mut commands: Commands,
