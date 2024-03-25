@@ -7,7 +7,7 @@ pub fn spawn_car_system(
     mut commands: Commands,
     asset_server: Res<AssetServer>
 ) {
-    let race_gltf = asset_server.load("models/race.glb#Scene0");
+    let race_gltf = asset_server.load("models/raceCarRed.glb#Scene0");
 
     commands.spawn((
         Car,
@@ -15,7 +15,7 @@ pub fn spawn_car_system(
         CameraTarget,
         SceneBundle {
             scene: race_gltf,
-            transform: Transform::from_xyz(0.0, 0.0, 0.0).looking_at(Vec3::X, Vec3::Y),
+            transform: Transform::from_xyz(0.0, 0.0, 0.0).looking_at(-Vec3::X, Vec3::Y),
             ..default()
         }
     ));
