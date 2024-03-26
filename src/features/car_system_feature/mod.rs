@@ -13,8 +13,10 @@ impl Plugin for CarFeature {
     fn build(&self, app: &mut App) {
         app
             .add_systems(Startup, spawn_car_system)
-            .add_systems(Update, car_acceleration_system)
-            .add_systems(Update, car_turn_system)
-            .add_systems(Update, car_move_system);
+            .add_systems(Update, (
+                car_acceleration_system,
+                car_turn_system,
+                car_move_system
+            ));
     }
 }
